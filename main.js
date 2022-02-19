@@ -8,6 +8,7 @@ UI_ELEMENTS.SUBMIT.addEventListener('click',checkTask);
 UI_ELEMENTS.SUBMIT.addEventListener('click',clearDisplay);
 
 function emptyTask(){
+    type.classList.add('empty')
     type.removeAttribute('placeholder');
     type.setAttribute('placeholder','Please fill out the field');
     UI_ELEMENTS.DISPLAY.style.borderColor = 'red'
@@ -23,9 +24,8 @@ function clearDisplay(){
 }
 
 function createTask(){
-    type.removeAttribute('placeholder');
-    type.setAttribute('placeholder','Type your task');
-    UI_ELEMENTS.DISPLAY.style.borderColor = '#bdbdbd'
+    defaultInputColor();
+    
     const displayValue = UI_ELEMENTS.DISPLAY.value;
     const div = document.createElement('div');
     div.className = "to-do__task";
@@ -34,6 +34,7 @@ function createTask(){
         <button class="close">x</button>
     `;
     UI_ELEMENTS.TO_DO_CONTENT.append(div);
+
     removeTask();
 }
 
@@ -50,3 +51,9 @@ function removeParent(){
     // this.parentNode.remove()
 }
 
+function defaultInputColor(){
+    type.classList.remove('empty')
+    type.removeAttribute('placeholder');
+    type.setAttribute('placeholder','Type your task');
+    UI_ELEMENTS.DISPLAY.style.borderColor = '#bdbdbd'
+}

@@ -11,6 +11,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+:root{
+    --css-warning: rgb(214, 102, 102);
+}
+
 .container__main{
     margin:50px auto;
     width: 540px;
@@ -58,13 +62,16 @@ body{
     height: 40px;
     padding: 10px;
     font-size: 20px;
-    /* border-color: red; */
 }
 
 .submit{
     height: 40px;
     cursor: pointer;
     float:right;
+}
+
+.empty::placeholder {
+    color:var(--css-warning);
 }
 
 .to-do__task{
