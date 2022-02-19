@@ -4,14 +4,15 @@ const UI_ELEMENTS ={
     TO_DO_CONTENT: document.querySelector('.todo__content'),
 }
 
-UI_ELEMENTS.SUBMIT.addEventListener('click',createTask);
-UI_ELEMENTS.SUBMIT.addEventListener('click',clearDisplay);
 UI_ELEMENTS.SUBMIT.addEventListener('click',checkTask);
+UI_ELEMENTS.SUBMIT.addEventListener('click',clearDisplay);
+
+function emptyTask(){
+    UI_ELEMENTS.DISPLAY.style.borderColor = 'red'
+}
 
 function checkTask(){
-    if (UI_ELEMENTS.DISPLAY.value = '') console.log('work')
-    else UI_ELEMENTS.DISPLAY.style.borderColor = 'red'
-    console.log(UI_ELEMENTS.DISPLAY.value,'debug')
+    (!UI_ELEMENTS.DISPLAY.value) ? emptyTask() : createTask();
 }
 
 function clearDisplay(){
