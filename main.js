@@ -21,6 +21,7 @@ function clearDisplay(){
 }
 
 function createTask(){
+    UI_ELEMENTS.DISPLAY.style.borderColor = '#bdbdbd'
     const displayValue = UI_ELEMENTS.DISPLAY.value;
     const div = document.createElement('div');
     div.className = "to-do__task";

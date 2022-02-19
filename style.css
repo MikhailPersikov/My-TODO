@@ -30,6 +30,12 @@ body{
     font-family: 'Shizuru', cursive;
 }
 
+.to-do__task:hover{
+    background-color: #3f434b;
+    color: #5cb15f;
+    cursor: pointer;
+}
+
 .container{
     background-color: white;
     width: 500px;
