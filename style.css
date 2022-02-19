@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shizuru&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #232529;
+    color:white; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.container__main{
+    margin:50px auto;
+    width: 540px;
+    display:flex;
+    justify-content: center; 
+    flex-direction: column;
+    padding: 20px;
+}
+
+.to__do-text{
+    margin-bottom: 5px;
+    color:#3c763d;
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    font-size:30px;
+    font-family: 'Shizuru', cursive;
+}
+
+.container{
+    background-color: white;
+    width: 500px;
+    min-height: 100px;
+    padding: 10px;
+    border: 2px solid rgb(75, 74, 74);
+    border-radius:4px;
+}
+
+.inner__form{
+    /* background-color: grey; */
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.onput__place{
+    width: 415px;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    /* border-color: red; */
+}
+
+.submit{
+    height: 40px;
+    cursor: pointer;
+    float:right;
+}
+
+.to-do__task{
+    padding: 15px;
+    border: 1px solid #080808;
+    border-radius: 4px;
+    color: #3c763d;
+    background-color: #232529;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 10px;
+}
+
+.close{
+    cursor:pointer;
+    float:right;
+}
+
+.todo__content{
+    margin-top:10px ;
+}
