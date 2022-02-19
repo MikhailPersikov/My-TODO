@@ -8,6 +8,8 @@ UI_ELEMENTS.SUBMIT.addEventListener('click',checkTask);
 UI_ELEMENTS.SUBMIT.addEventListener('click',clearDisplay);
 
 function emptyTask(){
+    type.removeAttribute('placeholder');
+    type.setAttribute('placeholder','Please fill out the field');
     UI_ELEMENTS.DISPLAY.style.borderColor = 'red'
 }
 
@@ -21,6 +23,8 @@ function clearDisplay(){
 }
 
 function createTask(){
+    type.removeAttribute('placeholder');
+    type.setAttribute('placeholder','Type your task');
     UI_ELEMENTS.DISPLAY.style.borderColor = '#bdbdbd'
     const displayValue = UI_ELEMENTS.DISPLAY.value;
     const div = document.createElement('div');
