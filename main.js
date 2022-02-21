@@ -1,8 +1,4 @@
-const UI_ELEMENTS ={
-    SUBMIT: document.querySelector('.submit'),
-    DISPLAY: document.querySelector('.onput__place'),
-    TO_DO_CONTENT: document.querySelector('.todo__content'),
-}
+import {UI_ELEMENTS} from './view.js'
 
 UI_ELEMENTS.SUBMIT.addEventListener('click',checkTask);
 UI_ELEMENTS.SUBMIT.addEventListener('click',clearDisplay);
